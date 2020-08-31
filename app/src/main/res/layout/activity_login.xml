@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        tools:context=".login">
+
+        <ImageView
+            android:id="@+id/top_splash"
+            android:layout_width="110dp"
+            android:layout_height="127dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/main_top" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="26dp"
+            android:layout_toRightOf="@id/top_splash"
+            android:text="@string/login_text"
+            android:textAllCaps="true"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/main_img"
+            android:layout_width="match_parent"
+            android:layout_height="255dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/ic_login" />
+
+        <EditText
+            android:inputType="text"
+            android:id="@+id/username_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_img"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/btn_background2"
+            android:drawableLeft="@drawable/ic_person"
+            android:drawablePadding="16dp"
+            android:hint="@string/hint"
+            android:padding="16dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorOfBlack"
+            android:textColorHint="@color/colorOfBlack" />
+
+        <EditText
+            android:inputType="textPassword"
+            android:textSize="12sp"
+            android:id="@+id/pass_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username_ed"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/btn_background2"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="16dp"
+            android:hint="password"
+            android:padding="16dp"
+            android:textColor="@color/colorOfBlack"
+            android:textColorHint="@color/colorOfBlack" />
+
+        <Button
+            android:id="@+id/login_id"
+            style="@style/btnStyle"
+            android:layout_below="@id/pass_ed"
+            android:layout_marginTop="16dp"
+            android:text="@string/login_text" />
+
+        <TextView
+            android:id="@+id/ask_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_id"
+    android:layout_centerHorizontal="true"
+             android:layout_marginTop="16dp"
+            android:text="Dont have an Account ?"
+            android:textColor="@color/colorOfBlack"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/sginup_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_id"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/ask_text"
+            android:text="@string/sginup_text"
+            android:textColor="@color/colorBasc" />
+
+        <ImageView
+            android:layout_width="86dp"
+            android:layout_height="73dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="-5dp"
+            android:layout_marginBottom="-5dp"
+            android:src="@drawable/login_bottom" />
+    </RelativeLayout>
+
+</ScrollView>

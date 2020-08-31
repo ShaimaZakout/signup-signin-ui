@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Login ui</string>
+    <string name="login_text">login</string>
+    <string name="sginup_text">sginup</string>
+    <string name="welcome_text">welcome to edu</string>
+    <string name="hint">pely@gmail.com</string>
+</resources>
